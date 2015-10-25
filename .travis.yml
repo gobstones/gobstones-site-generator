@@ -3,14 +3,15 @@ sudo: required
 addons:
   apt:
     packages:
-      - lftp
+    - lftp
 node_js:
 - 0.12.3
 before_script:
 - npm install -g harp
 - chmod +x ./deployMaster.sh
-script: 
-- if [ $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" ] ; then ./deployMaster.sh; fi
+script:
+- if [ $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" ] ; then ./deployMaster.sh;
+  fi
 env:
   global:
-  - secure: jxCGUUOzhMwpaKbKBxNRaHGgdpGkTSPU8ejc68X6KDMF9VEILmMKOuCGv3FQ8diEmnJPYu5Yn27AG6DroBOFJCpDNvLeyHzPKQmrucLlQoGig56W2zwOFPfCIwmV4BMNg7TjTle4eraxHY58L0ShEAKKhNaFPaEhZlOxA3MX5r+mucTKt/bscJWh5mZGICFWwhdNLpCOkgYA1+EkcM0HGW7I0UMJNbOMwBOF6PQPbZu5d+Ff/fP3Sv4iP+XJntgpLfRq7aZt84lEPywmEuJlWGG0uEvqaMF83DdYDYx3RnUrugGTfThFo4ARu1Z/wo6BPAOrC4JbmHDJfdwxP8xQPUIQvLmtFjRyAbH2JhaATsN2rphNmIf6P81qer1YOtCVPSnqhDYtb82UTKoCnaODC7U49y99i4VLhJgrTL2vD0oc/QdfbLr/8IUN/zW9Z+UdJBdKD7rtOukeHY3nskQZp3tRGEpd6CwmpUKexQZsKJyu9XYCOwxkATqe8rf/FShFWWoYbXzRKOQRNtcmNPCsbWBmHCFW8cvVlNc35Z4KQpQB5zQZlxGY7uXcTQgWs8nWcqtYGEyz8yUCQr3CX+VUMxOuDmWI7/gT64w7uhqGyGEIyvA+3dNUMX+l0KMve4sHdm7W/CRWuac6jor75gfp4A5gGgtd5Y2o5uFZ8mKd1L0=
+    secure: J8L3g605yfSVZe+IwF0Kgi1VDXvo+J/nQWRi44pkyy1NXrDwTZpRqpzB7WxYYKff1XSgvdUja6tXy/WvxUmthtLyOSG5p0ToKJFWzFLNZU0WxXcJbXWW2CrWkO3grcSo1d7bx1lmGKDDSbsErzHL1EvNMwv1/uMVOipVwRZMx3Z5IG9C/PRaDhHd3q9FgEQDy8J2mddAs8CJfYN0Y18HAzPqk6eUhSmHZXD/CfFl7e7q3NHzuELuXkIKzZwSlcFzPlXpHWR0bM5tgJtXvsDIpCrTFXKKdJ80VdN8bQu7KUzwCcbTTmMKvVjCfDhact2Q2FyTUu7BNQJ0P+lxvobR318+YQ1hltU6jDe5/2SwMPd+Ej8FhIboWm61HEunPd/UdaYz1b4KAX1O8u+gQKdG5OGRcCbCWAvD/P2VF7Ve/eP7OG/dlPn5SOyg/P9LoinuxeiZs7hwEymFjJl2owsdLZY8FRh8F7B09rDVYzR0adq2JPP/c4dy6eqQrG0MeYbKK4npO9tz5d4nwXuXct5ip9qkNeCh5WNxEs1fZa+iFDi+WqdWE1LKWAggYNQt50vXrL+c0jbGR8G3R8sjsDJ3hN9lMvwBTMMh18nsEQy7vRDyjKKXvc7f4eqBgdnH1kdJObRbwDPkjJwb891d1QFHc48RsapQuujwxydFUrfXTSE=

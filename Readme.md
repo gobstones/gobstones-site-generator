@@ -3,7 +3,6 @@
 ## Requires:
  - [NodeJS](https://nodejs.org/)
  - [HarpJS](http://harpjs.com/) `npm install -g harp`
- - [Component](https://github.com/componentjs/component) `npm install -g component`
 
 ## Cómo agregar contenido
 El html se genera a partir de templates [Jade](http://jade-lang.com/), y se utiliza [Stylus](https://learnboost.github.io/stylus/) para los estilos. Los archivos .md con markdown generan html, con lo cual el contenido de posts, descripciones, etc., pueden escribirse en Markdown.
@@ -11,19 +10,16 @@ A su vez, los archivos json sirven para guardar información, que puede ser acce
 Para una explicación más completa ver la [documentación de HarpJS](http://harpjs.com/docs/development/layout)
 
 ## Local Server
- Se puede probar localmente ejecutando dentro de /public/assets
- - `component install` instala las dependencias en /public/assets/components    
- - `component build`   buildea las dependencias en /public/assets/build
 
- Luego en el directorio raiz
+ En el directorio raiz
  - `harp server`       levanta un server local
 
 ## Deploy:
 
 ### Travis CI
  
- Todo lo que se suba a `master` va a ser buildeado por Travis-CI y pusheado a https://github.com/uqbar-project/wisit15-site-harpjs
- El sitio estático quedará servido en http://uqbar-project.github.io/wisit15-site-harpjs
+ Todo lo que se suba a `master` va a ser buildeado por Travis-CI y pusheado a https://github.com/gobstones/gobstones.github.io
+ El sitio estático quedará servido en http://gobstones.github.io
  
 ### Manual
  
