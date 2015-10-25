@@ -1,4 +1,4 @@
-# Uqbar Site Generator
+# Gobstones Site Generator
 
 ## Requires:
  - [NodeJS](https://nodejs.org/)
