@@ -1,0 +1,26 @@
+block basetag
+  -var base = '..'
+
+doctype
+html
+  head
+    base(href='#{base}')
+    meta(charset='UTF-8')
+    link(rel='icon', href='/favicon_icon.ico', type='image/x-icon')
+    title #{public._data.title}
+
+    block styles
+      link(rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.red-deep_purple.min.css")
+      link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+    block scripts
+      script(src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js")
+
+  body
+    .mdl-layout.mdl-js-layout
+      != partial('../_shared/toolbar')
+      != partial('../_shared/drawer')
+      main.mdl-layout__content
+        .page-content
+          block content
+        != partial('../_shared/footer')

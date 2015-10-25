@@ -1,0 +1,11 @@
+extends ../_shared/_base_layout
+
+append styles
+    link(rel="stylesheet" href="detail/index.css")
+block content
+    .mdl-grid
+        .mdl-cell--1-col
+        .mdl-cell--10-col
+            .sheet.mdl-shadow--2dp
+                != yield
+        .mdl-cell--1-col

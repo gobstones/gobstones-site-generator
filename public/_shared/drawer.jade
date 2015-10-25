@@ -1,0 +1,5 @@
+.mdl-layout__drawer
+    span.mdl-layout-title #{public._data.title}
+    nav.mdl-navigation
+        each section in public._data.sections
+            a.mdl-navigation__link(href="#{ section.path }") #{section.label}

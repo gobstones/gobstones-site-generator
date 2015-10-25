@@ -1,0 +1,51 @@
+{
+  "title": "Gobstones",
+  "sections": [
+    {
+      "label": "Comunidad",
+      "path": "http://www.gobstones.org/?page_id=47"
+    },
+    {
+      "label": "¿Qué es gobstones?",
+      "path": "que-es-gobstones"
+    },
+    {
+      "label": "Descargas",
+      "path": "descargas"
+    },
+    {
+      "label": "Bibliografía",
+      "path": "http://www.gobstones.org/?page_id=34"
+    },
+    {
+      "label": "Contacto",
+      "path": "http://www.gobstones.org/?page_id=28"
+    }
+  ],
+  "home_cards": [
+    {
+      "icon": "fa-users",
+      "title": "Comunidad",
+      "section":"http://gobstones-es-importante.blogspot.com.ar/",
+      "description": "Somos una comunidad enfocada en la enseñanza introductoria a la programación en disitntos niveles educativos."
+    },
+    {
+      "icon": "fa-code",
+      "title": "El Lenguaje",
+      "section":"http://gobstones-es-importante.blogspot.com.ar/",
+      "description": "Gobstones es un lenguaje pensado y diseñado para la enseñanza introductoria a la programación."
+    },
+    {
+      "icon": "fa-arrow-circle-down",
+      "title": "Descargas",
+      "section":"descargas",
+      "description": "Las herramientas que implementan el lenguaje Gobstones son software libre. Podés descargarlas acá."
+    },
+    {
+      "icon": "fa-book",
+      "title": "Bibliografia",
+      "section":"http://www.gobstones.org/?page_id=34",
+      "description": "Accedé al material bibliográfico de Gobstones. ¡Explorá su documentación, libros relacionados, apuntes y más!."
+    }
+  ]
+}

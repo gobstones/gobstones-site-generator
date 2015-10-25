@@ -1,0 +1,28 @@
+extends _home_layout
+
+append scripts
+    
+
+block basetag
+  -var base = '.'
+
+block child
+    .logo-banner
+    .mdl-grid.destacados-section
+        each item in public._data.home_cards
+            .mdl-cell.mdl-cell--3-col-desktop.mdl-cell--top.mdl-cell--12-col-phone
+                .block_img
+                    a(href='#{item.section}')
+                        i.fa.fa-3x(class='#{item.icon}')
+                a(href='#{item.section}')
+                    h3 #{item.title}
+                h6 #{item.description}
+    .banner-destacado.mdl-cell--12-col
+        a(href="http://gobstones-es-importante.blogspot.com.ar") ¿Por qué es importante Gobstones? Descubrilo en el nuevo Blog!
+    .mdl-grid.cita-section
+        .mdl-cell--3-col
+        .mdl-cell--6-col
+            .cita.mdl-shadow--2dp
+                h5 "Cuando sepas reconocer la cuatrifolia en todos sus estados, raíz, hoja y ﬂor, por la vista y el olfato, y la semilla, podrás aprender el nombre verdadero de la planta, ya que entonces conocerás su esencia, que es más que su utilidad."
+                h6 Un Mago de Terramar, Ursula K. Le Guin
+        .mdl-cell--3-col

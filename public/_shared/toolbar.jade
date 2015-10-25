@@ -1,0 +1,8 @@
+header.mdl-layout__header
+    .mdl-layout__header-row
+        span.mdl-layout-title
+            a.mdl-button(href="/") #{public._data.title}
+        .mdl-layout-spacer
+        nav.mdl-navigation
+            each section in public._data.sections
+                a.mdl-navigation__link(href="#{ section.path }") #{section.label}

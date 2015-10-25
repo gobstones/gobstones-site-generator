@@ -1,0 +1,16 @@
+language: node_js
+sudo: required
+addons:
+  apt:
+    packages:
+      - lftp
+node_js:
+- 0.12.3
+before_script:
+- npm install -g harp
+- chmod +x ./deployMaster.sh
+script: 
+- if [ $TRAVIS_PULL_REQUEST == "false" -a $TRAVIS_BRANCH == "master" ] ; then ./deployMaster.sh; fi
+env:
+  global:
+  - secure: jxCGUUOzhMwpaKbKBxNRaHGgdpGkTSPU8ejc68X6KDMF9VEILmMKOuCGv3FQ8diEmnJPYu5Yn27AG6DroBOFJCpDNvLeyHzPKQmrucLlQoGig56W2zwOFPfCIwmV4BMNg7TjTle4eraxHY58L0ShEAKKhNaFPaEhZlOxA3MX5r+mucTKt/bscJWh5mZGICFWwhdNLpCOkgYA1+EkcM0HGW7I0UMJNbOMwBOF6PQPbZu5d+Ff/fP3Sv4iP+XJntgpLfRq7aZt84lEPywmEuJlWGG0uEvqaMF83DdYDYx3RnUrugGTfThFo4ARu1Z/wo6BPAOrC4JbmHDJfdwxP8xQPUIQvLmtFjRyAbH2JhaATsN2rphNmIf6P81qer1YOtCVPSnqhDYtb82UTKoCnaODC7U49y99i4VLhJgrTL2vD0oc/QdfbLr/8IUN/zW9Z+UdJBdKD7rtOukeHY3nskQZp3tRGEpd6CwmpUKexQZsKJyu9XYCOwxkATqe8rf/FShFWWoYbXzRKOQRNtcmNPCsbWBmHCFW8cvVlNc35Z4KQpQB5zQZlxGY7uXcTQgWs8nWcqtYGEyz8yUCQr3CX+VUMxOuDmWI7/gT64w7uhqGyGEIyvA+3dNUMX+l0KMve4sHdm7W/CRWuac6jor75gfp4A5gGgtd5Y2o5uFZ8mKd1L0=
